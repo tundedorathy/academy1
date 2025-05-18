@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Successful - Zanzan Academy</title>
+  <meta name="description" content="Your payment has been successfully processed. Welcome to Zanzan Academy!">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/payment-confirmation.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <img src="images/logo.jpg" alt="Zanzan Academy Logo" width="75" height="100">
+          <span class="logo-text">Zanzan Academy</span>
+        </div>
+        <nav class="main-nav">
+          <a href="index.html#about" class="nav-link">About</a>
+          <a href="index.html#programs" class="nav-link">Programs</a>
+          <a href="index.html#testimonials" class="nav-link">Testimonials</a>
+          <a href="index.html#contact" class="nav-link">Contact</a>
+        </nav>
+        <a href="index.html"><button class="btn btn-primary">Back to Home</button></a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="container">
+      <nav class="mobile-nav">
+        <a href="index.html#about" class="mobile-nav-link">About</a>
+        <a href="index.html#programs" class="mobile-nav-link">Programs</a>
+        <a href="index.html#testimonials" class="mobile-nav-link">Testimonials</a>
+        <a href="index.html#contact" class="mobile-nav-link">Contact</a>
+        <a href="index.html"><button class="btn btn-primary mobile-btn">Back to Home</button></a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Confirmation Section -->
+  <section class="confirmation-section">
+    <div class="container">
+      <div class="confirmation-container">
+        <div class="confirmation-header">
+          <div class="success-icon">
+            <i class="icon-check"></i>
+          </div>
+          <h1>Payment Successful!</h1>
+          <p>Thank you for enrolling with Zanzan Academy. Your payment has been successfully processed.</p>
+        </div>
+
+        <div class="confirmation-content">
+          <div class="confirmation-details">
+            <div class="confirmation-card">
+              <h2>Transaction Details</h2>
+              <div class="detail-item">
+                <span class="detail-label">Transaction ID:</span>
+                <span class="detail-value" id="transactionId">ZZA-12345-67890</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Date:</span>
+                <span class="detail-value" id="transactionDate">May 12, 2025</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Payment Method:</span>
+                <span class="detail-value" id="paymentMethod">Credit Card</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Amount Paid:</span>
+                <span class="detail-value" id="amountPaid">₦50,000</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Status:</span>
+                <span class="detail-value status-success">Completed</span>
+              </div>
+            </div>
+
+            <div class="confirmation-card">
+              <h2>Program Details</h2>
+              <div class="program-confirmation">
+                <div class="program-image">
+                  <img src="images/program-1.jpg" alt="Digital Creativity & Social Media Economy" id="programImage">
+                </div>
+                <div class="program-info">
+                  <h3 id="programName">Digital Creativity & Social Media Economy</h3>
+                  <p id="programDescription">Comprehensive training program</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="confirmation-card">
+              <h2>Next Steps</h2>
+              <div class="next-steps">
+                <div class="step-item">
+                  <div class="step-icon">
+                    <i class="icon-mail"></i>
+                  </div>
+                  <div class="step-content">
+                    <h3>Check Your Email</h3>
+                    <p>We've sent a confirmation email to <span id="userEmail">your@email.com</span> with your receipt and login details.</p>
+                  </div>
+                </div>
+                <div class="step-item">
+                  <div class="step-icon">
+                    <i class="icon-calendar"></i>
+                  </div>
+                  <div class="step-content">
+                    <h3>Mark Your Calendar</h3>
+                    <p>Your program starts on <span id="startDate">May 15, 2025</span>. We'll send you a reminder email with access instructions.</p>
+                  </div>
+                </div>
+                <div class="step-item">
+                  <div class="step-icon">
+                    <i class="icon-users"></i>
+                  </div>
+                  <div class="step-content">
+                    <h3>Join Our Community</h3>
+                    <p>Connect with fellow students and mentors in our exclusive online community.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="confirmation-sidebar">
+            <div class="receipt-actions">
+              <button class="btn btn-outline btn-block" id="downloadReceipt">
+                <i class="icon-download"></i> Download Receipt
+              </button>
+              <button class="btn btn-outline btn-block" id="printReceipt">
+                <i class="icon-printer"></i> Print Receipt
+              </button>
+            </div>
+
+            <div class="account-access">
+              <h3>Access Your Account</h3>
+              <p>Your account has been created. You can now access your learning dashboard.</p>
+              <button class="btn btn-primary btn-block" id="accessDashboard">
+                Go to Learning Dashboard
+              </button>
+            </div>
+
+            <div class="help-support">
+              <h3>Need Help?</h3>
+              <p>If you have any questions or need assistance, our support team is here to help.</p>
+              <a href="mailto:support@zanzanacademy.com" class="support-link">
+                <i class="icon-mail"></i> support@zanzanacademy.com
+              </a>
+              <a href="tel:+1234567890" class="support-link">
+                <i class="icon-phone"></i> +123-456-7890
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="confirmation-footer">
+          <div class="share-section">
+            <h3>Share Your Achievement</h3>
+            <p>Let your network know you've taken this important step in your career development!</p>
+            <div class="social-share-buttons">
+              <a href="#" class="social-share-btn facebook">
+                <i class="icon-facebook"></i> Share
+              </a>
+              <a href="#" class="social-share-btn twitter">
+                <i class="icon-twitter"></i> Tweet
+              </a>
+              <a href="#" class="social-share-btn linkedin">
+                <i class="icon-linkedin"></i> Post
+              </a>
+              <a href="#" class="social-share-btn whatsapp">
+                <i class="icon-whatsapp"></i> Share
+              </a>
+            </div>
+          </div>
+
+          <div class="additional-actions">
+            <a href="index.html" class="btn btn-outline">
+              <i class="icon-home"></i> Return to Homepage
+            </a>
+            <a href="index.html#programs" class="btn btn-accent">
+              <i class="icon-plus"></i> Explore More Programs
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-about">
+          <div class="footer-logo">
+            <img src="images/logo.jpg" alt="Zanzan Academy Logo" width="40" height="40">
+            <span>Zanzan Academy</span>
+          </div>
+          <p>Empowering young Africans with future-proof digital skills for the creative economy.</p>
+          <div class="social-links">
+            <a href="#" class="social-link">
+              <i class="icon-facebook"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="icon-instagram"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="icon-twitter"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="icon-linkedin"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h3>Programs</h3>
+          <ul>
+            <li><a href="index.html#programs">Creative Design</a></li>
+            <li><a href="index.html#programs">Digital Entrepreneurship</a></li>
+            <li><a href="index.html#programs">Digital Marketing</a></li>
+            <li><a href="index.html#programs">Professional Writing</a></li>
+            <li><a href="index.html#programs">Data Entry & Finance</a></li>
+            <li><a href="index.html#programs">Business Leadership</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Success Stories</a></li>
+            <li><a href="#">Free Workshops</a></li>
+            <li><a href="#">Career Resources</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <ul>
+            <li>Email: info@zanzanacademy.com</li>
+            <li>Phone: +123-456-7890</li>
+            <li>Address: 123 Digital Avenue, Tech City</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="currentYear"></span> Zanzan Academy. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+<!-- PDF Generation Libraries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+<!-- Other scripts -->
+  <script src="js/scripts.js"></script>
+  <script src="js/payment-confirmation.js"></script>
+</body>
+</html>

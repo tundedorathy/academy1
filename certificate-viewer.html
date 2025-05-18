@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificate Viewer - Zanzan Academy</title>
+  <meta name="description" content="View and download your course completion certificates from Zanzan Academy.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/certificate.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.jpg" alt="Zanzan Academy Logo" width="40" height="40">
+            <span>Zanzan Academy</span>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="#" class="active">Certificates</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <a href="dashboard.html" class="btn btn-outline-primary">Back to Dashboard</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="certificate-page">
+    <div class="container">
+      <div class="page-header">
+        <h1>Your Certificate</h1>
+        <p>Congratulations on completing your course! View and download your certificate below.</p>
+      </div>
+
+      <!-- Certificate Controls -->
+      <div class="certificate-controls">
+        <div class="certificate-info">
+          <h2>Digital Creativity & Social Media Economy</h2>
+          <p>Issued on: June 7, 2023</p>
+          <p>Certificate ID: ZA-DC-2023-06-1234</p>
+        </div>
+        <div class="certificate-actions">
+          <button id="downloadCertificate" class="btn btn-primary">
+            <i class="fas fa-download"></i> Download Certificate
+          </button>
+          <button id="printCertificate" class="btn btn-outline">
+            <i class="fas fa-print"></i> Print Certificate
+          </button>
+          <button id="shareCertificate" class="btn btn-outline">
+            <i class="fas fa-share-alt"></i> Share Certificate
+          </button>
+        </div>
+      </div>
+
+      <!-- Certificate Viewer -->
+      <div class="certificate-container">
+        <div class="certificate-wrapper">
+          <div id="certificateElement" class="certificate">
+            <div class="certificate-header">
+              <div class="certificate-logo">
+                <img src="images/logo.jpg" alt="Zanzan Academy Logo">
+              </div>
+              <div class="certificate-title">
+                <h2>Certificate of Completion</h2>
+              </div>
+            </div>
+            <div class="certificate-body">
+              <div class="certificate-statement">
+                <p>This is to certify that</p>
+                <h3 class="certificate-name">John Doe</h3>
+                <p>has successfully completed the course</p>
+                <h3 class="certificate-course">Digital Creativity & Social Media Economy</h3>
+                <p>with a total of 24 hours of instruction</p>
+              </div>
+              <div class="certificate-date">
+                <p>Issued on June 7, 2023</p>
+              </div>
+            </div>
+            <div class="certificate-footer">
+              <div class="certificate-signature">
+                <img src="images/signature.png" alt="Director's Signature">
+                <p>Dr. Sarah Williams</p>
+                <p>Program Director</p>
+              </div>
+              <div class="certificate-seal">
+                <img src="images/seal.png" alt="Zanzan Academy Seal">
+              </div>
+              <div class="certificate-verification">
+                <div class="certificate-qr">
+                  <img src="images/qr-code.png" alt="Verification QR Code">
+                </div>
+                <p>Certificate ID: ZA-DC-2023-06-1234</p>
+                <p>Verify at: verify.zanzanacademy.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificate Verification -->
+      <div class="verification-section">
+        <h2>Certificate Verification</h2>
+        <p>This certificate can be verified online to confirm its authenticity.</p>
+        <div class="verification-methods">
+          <div class="verification-method">
+            <div class="method-icon">
+              <i class="fas fa-qrcode"></i>
+            </div>
+            <div class="method-details">
+              <h3>QR Code Verification</h3>
+              <p>Scan the QR code on the certificate to verify its authenticity instantly.</p>
+            </div>
+          </div>
+          <div class="verification-method">
+            <div class="method-icon">
+              <i class="fas fa-link"></i>
+            </div>
+            <div class="method-details">
+              <h3>Online Verification</h3>
+              <p>Visit <a href="https://verify.zanzanacademy.com" target="_blank">verify.zanzanacademy.com</a> and enter the Certificate ID.</p>
+            </div>
+          </div>
+          <div class="verification-method">
+            <div class="method-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="method-details">
+              <h3>Email Verification</h3>
+              <p>Send an email to <a href="mailto:verify@zanzanacademy.com">verify@zanzanacademy.com</a> with the Certificate ID.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other Certificates -->
+      <div class="other-certificates">
+        <h2>Your Other Certificates</h2>
+        <div class="certificates-grid">
+          <div class="certificate-card pending">
+            <div class="card-status">
+              <span>In Progress</span>
+            </div>
+            <div class="card-content">
+              <h3>Entrepreneurship and Business Development</h3>
+              <p>Course in progress. Certificate will be available after completion.</p>
+            </div>
+          </div>
+          <div class="certificate-card pending">
+            <div class="card-status">
+              <span>In Progress</span>
+            </div>
+            <div class="card-content">
+              <h3>Artificial Intelligence Literacy</h3>
+              <p>Course in progress. Certificate will be available after completion.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="images/logo.jpg" alt="Zanzan Academy Logo" width="40" height="40">
+          <span>Zanzan Academy</span>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="dashboard.html">Dashboard</a></li>
+              <li><a href="#">Courses</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Support</h3>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Contact Us</h3>
+            <ul class="contact-info">
+              <li><i class="fas fa-envelope"></i> info@zanzanacademy.com</li>
+              <li><i class="fas fa-phone"></i> +123-456-7890</li>
+              <li><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Zanzan Academy. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Share Modal -->
+  <div id="shareModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Share Your Certificate</h2>
+        <button class="close-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Share your achievement with your network:</p>
+        <div class="share-options">
+          <a href="#" class="share-option" data-platform="linkedin">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="#" class="share-option" data-platform="twitter">
+            <i class="fab fa-twitter"></i>
+            <span>Twitter</span>
+          </a>
+          <a href="#" class="share-option" data-platform="facebook">
+            <i class="fab fa-facebook-f"></i>
+            <span>Facebook</span>
+          </a>
+          <a href="#" class="share-option" data-platform="email">
+            <i class="fas fa-envelope"></i>
+            <span>Email</span>
+          </a>
+        </div>
+        <div class="share-link">
+          <p>Or copy this link:</p>
+          <div class="copy-link">
+            <input type="text" id="certificateLink" value="https://zanzanacademy.com/certificate/ZA-DC-2023-06-1234" readonly>
+            <button id="copyLink" class="btn btn-sm">Copy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/certificate-generator.js"></script>
+  <script src="js/certificate.js"></script>
+</body>
+</html>
